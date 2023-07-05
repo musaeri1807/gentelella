@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DataTables | Gentelella</title>
+
+    <!-- Bootstrap -->
+    <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <center>
+                <h2 >Administrator</h2>
+              </center>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="home.php"><i class="fa fa-home"></i> Home</a></li>
+                  <!-- <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">General Form</a></li>
+                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="form_validation.html">Form Validation</a></li>
+                      <li><a href="form_wizards.html">Form Wizard</a></li>
+                      <li><a href="form_upload.html">Form Upload</a></li>
+                      <li><a href="form_buttons.html">Form Buttons</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="general_elements.html">General Elements</a></li>
+                      <li><a href="media_gallery.html">Media Gallery</a></li>
+                      <li><a href="typography.html">Typography</a></li>
+                      <li><a href="icons.html">Icons</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="widgets.html">Widgets</a></li>
+                      <li><a href="invoice.html">Invoice</a></li>
+                      <li><a href="inbox.html">Inbox</a></li>
+                      <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                  </li> -->
+             
+                  <li><a><i class="fa fa-bar-chart-o"></i> Data Rab <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chartjs.html">Project</a></li>
+                      <li><a href="chartjs2.html">Rincian Project</a></li>
+                 
+                    </ul>
+                  </li>
+                  <!-- <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+                      <li><a href="fixed_footer.html">Fixed Footer</a></li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Administrator</h3>
+                <ul class="nav side-menu">
+                  <li><a href="tables_dynamic.php"><i class="fa fa-users"></i> Management Users</a></li>
+                  <li><a href="#"><i class="fa fa-cogs"></i> Settings </a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      John Doe Musaeri
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>                    
+                      <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+                  </li>
+  
+                  <li role="presentation" class="nav-item dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="badge bg-green">6</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="text-center">
+                          <a class="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Settings</h3>
+              </div>
+
+              <div class="title_right">
+              <div class="col-md-5 col-sm-5 form-group pull-right">
+                  <div class="input-group">                    
+                    <span class="input-group-btn">
+                    Aplikasi-Home-
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+            <div class="col-md-12  col-sm-12 ">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>Form Basic Elements <small>different form elements</small></h2>
+									<ul class="nav navbar-right panel_toolbox">
+										<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+										</li>
+										<li class="dropdown">
+											<a href="#"  data-toggle="dropdown" role="button" aria-expanded="false"></a>
+
+										</li>
+										<li><a class="close-link"><i class="fa fa-close"></i></a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+									<br />
+									<form class="form-horizontal form-label-left">
+
+										<div class="form-group row ">
+											<label class="control-label col-md-3 col-sm-3 ">Default Input</label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" class="form-control" placeholder="Default Input">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Disabled Input </label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" class="form-control" disabled="disabled" placeholder="Disabled Input">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Read-Only Input</label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" class="form-control" readonly="readonly" placeholder="Read-Only Input">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Date Of Birth <span class="required">*</span>
+											</label>
+											<div class="col-md-9 col-sm-9 ">
+												<textarea class="form-control" rows="3" placeholder="Date Of Birth"></textarea>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Password</label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="password" class="form-control" value="passwordonetwo">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">AutoComplete</label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" name="country" id="autocomplete-custom-append" class="form-control col-md-10" />
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Select</label>
+											<div class="col-md-9 col-sm-9 ">
+												<select class="form-control">
+													<option>Choose option</option>
+													<option>Option one</option>
+													<option>Option two</option>
+													<option>Option three</option>
+													<option>Option four</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Select Custom</label>
+											<div class="col-md-9 col-sm-9 ">
+												<select class="select2_single form-control" tabindex="-1">
+													<option></option>
+													<option value="AK">Alaska</option>
+													<option value="HI">Hawaii</option>
+													<option value="CA">California</option>
+													<option value="NV">Nevada</option>
+													<option value="OR">Oregon</option>
+													<option value="WA">Washington</option>
+													<option value="AZ">Arizona</option>
+													<option value="CO">Colorado</option>
+													<option value="ID">Idaho</option>
+													<option value="MT">Montana</option>
+													<option value="NE">Nebraska</option>
+													<option value="NM">New Mexico</option>
+													<option value="ND">North Dakota</option>
+													<option value="UT">Utah</option>
+													<option value="WY">Wyoming</option>
+													<option value="AR">Arkansas</option>
+													<option value="IL">Illinois</option>
+													<option value="IA">Iowa</option>
+													<option value="KS">Kansas</option>
+													<option value="KY">Kentucky</option>
+													<option value="LA">Louisiana</option>
+													<option value="MN">Minnesota</option>
+													<option value="MS">Mississippi</option>
+													<option value="MO">Missouri</option>
+													<option value="OK">Oklahoma</option>
+													<option value="SD">South Dakota</option>
+													<option value="TX">Texas</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Select Grouped</label>
+											<div class="col-md-9 col-sm-9 ">
+												<select class="select2_group form-control">
+													<optgroup label="Alaskan/Hawaiian Time Zone">
+														<option value="AK">Alaska</option>
+														<option value="HI">Hawaii</option>
+													</optgroup>
+													<optgroup label="Pacific Time Zone">
+														<option value="CA">California</option>
+														<option value="NV">Nevada</option>
+														<option value="OR">Oregon</option>
+														<option value="WA">Washington</option>
+													</optgroup>
+													<optgroup label="Mountain Time Zone">
+														<option value="AZ">Arizona</option>
+														<option value="CO">Colorado</option>
+														<option value="ID">Idaho</option>
+														<option value="MT">Montana</option>
+														<option value="NE">Nebraska</option>
+														<option value="NM">New Mexico</option>
+														<option value="ND">North Dakota</option>
+														<option value="UT">Utah</option>
+														<option value="WY">Wyoming</option>
+													</optgroup>
+													<optgroup label="Central Time Zone">
+														<option value="AL">Alabama</option>
+														<option value="AR">Arkansas</option>
+														<option value="IL">Illinois</option>
+														<option value="IA">Iowa</option>
+														<option value="KS">Kansas</option>
+														<option value="KY">Kentucky</option>
+														<option value="LA">Louisiana</option>
+														<option value="MN">Minnesota</option>
+														<option value="MS">Mississippi</option>
+														<option value="MO">Missouri</option>
+														<option value="OK">Oklahoma</option>
+														<option value="SD">South Dakota</option>
+														<option value="TX">Texas</option>
+														<option value="TN">Tennessee</option>
+														<option value="WI">Wisconsin</option>
+													</optgroup>
+													<optgroup label="Eastern Time Zone">
+														<option value="CT">Connecticut</option>
+														<option value="DE">Delaware</option>
+														<option value="FL">Florida</option>
+														<option value="GA">Georgia</option>
+														<option value="IN">Indiana</option>
+														<option value="ME">Maine</option>
+														<option value="MD">Maryland</option>
+														<option value="MA">Massachusetts</option>
+														<option value="MI">Michigan</option>
+														<option value="NH">New Hampshire</option>
+														<option value="NJ">New Jersey</option>
+														<option value="NY">New York</option>
+														<option value="NC">North Carolina</option>
+														<option value="OH">Ohio</option>
+														<option value="PA">Pennsylvania</option>
+														<option value="RI">Rhode Island</option>
+														<option value="SC">South Carolina</option>
+														<option value="VT">Vermont</option>
+														<option value="VA">Virginia</option>
+														<option value="WV">West Virginia</option>
+													</optgroup>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Select Multiple</label>
+											<div class="col-md-9 col-sm-9 ">
+												<select class="select2_multiple form-control" multiple="multiple">
+													<option>Choose option</option>
+													<option>Option one</option>
+													<option>Option two</option>
+													<option>Option three</option>
+													<option>Option four</option>
+													<option>Option five</option>
+													<option>Option six</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="control-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Input Tags</label>
+											<div class="col-md-9 col-sm-9 ">
+												<input id="tags_1" type="text" class="tags form-control" value="social, adverts, sales" />
+												<div id="suggestions-container" style="position: relative; float: left; width: 250px; margin: 10px;"></div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-md-3 col-sm-3  control-label">Checkboxes and radios
+												<br>
+												<small class="text-navy">Normal Bootstrap elements</small>
+											</label>
+
+											<div class="col-md-9 col-sm-9 ">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value=""> Option one. select more than one options
+													</label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value=""> Option two. select more than one options
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> Option one. only select one option
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input type="radio" value="option2" id="optionsRadios2" name="optionsRadios"> Option two. only select one option
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-md-3 col-sm-3  control-label">Checkboxes and radios
+												<br>
+												<small class="text-navy">Normal Bootstrap elements</small>
+											</label>
+
+											<div class="col-md-9 col-sm-9 ">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="flat" checked="checked"> Checked
+													</label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="flat"> Unchecked
+													</label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="flat" disabled="disabled"> Disabled
+													</label>
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="flat" disabled="disabled" checked="checked"> Disabled & checked
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input type="radio" class="flat" checked name="iCheck"> Checked
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input type="radio" class="flat" name="iCheck"> Unchecked
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input type="radio" class="flat" name="iCheck" disabled="disabled"> Disabled
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input type="radio" class="flat" name="iCheck3" disabled="disabled" checked> Disabled & Checked
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 col-sm-3 ">Switch</label>
+											<div class="col-md-9 col-sm-9 ">
+												<div class="">
+													<label>
+														<input type="checkbox" class="js-switch" checked /> Checked
+													</label>
+												</div>
+												<div class="">
+													<label>
+														<input type="checkbox" class="js-switch" /> Unchecked
+													</label>
+												</div>
+												<div class="">
+													<label>
+														<input type="checkbox" class="js-switch" disabled="disabled" /> Disabled
+													</label>
+												</div>
+												<div class="">
+													<label>
+														<input type="checkbox" class="js-switch" disabled="disabled" checked="checked" /> Disabled Checked
+													</label>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="ln_solid"></div>
+										<div class="form-group">
+											<div class="col-md-9 col-sm-9  offset-md-3">
+												<button type="button" class="btn btn-primary">Cancel</button>
+												<button type="reset" class="btn btn-primary">Reset</button>
+												<button type="submit" class="btn btn-success">Submit</button>
+											</div>
+										</div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+  </body>
+</html>
